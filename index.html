@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riesgos de las Redes Sociales</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    .riesgo {
+      background-color: #ffffff;
+      border-left: 6px solid #e74c3c;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .riesgo:hover {
+      transform: scale(1.01);
+    }
+
+    .riesgo img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .riesgo button {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .riesgo button:hover {
+      background-color: #c0392b;
+    }
+
+    .descripcion {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Riesgos de las Redes Sociales</h1>
+    <p>Descubre los peligros más comunes y cómo protegerte</p>
+  </header>
+
+  <section>
+    <div class="riesgo">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/06/15/bullying-1866532_960_720.jpg" alt="Ciberacoso">
+      <h2>1. Ciberacoso</h2>
+      <button onclick="toggle(this)">Ver más</button>
+      <div class="descripcion">
+        <p>El ciberacoso ocurre cuando una persona es hostigada mediante mensajes ofensivos, amenazas o humillaciones en redes sociales. Puede tener consecuencias graves en la salud mental de las víctimas.</p>
+      </div>
+    </div>
+
+    <div class="riesgo">
+      <img src="https://cdn.pixabay.com/photo/2017/09/26/13/40/security-2783265_960_720.jpg" alt="Suplantación de identidad">
+      <h2>2. Suplantación de identidad</h2>
+      <button onclick="toggle(this)">Ver más</button>
+      <div class="descripcion">
+        <p>Consiste en el uso no autorizado de datos personales para hacerse pasar por otra persona, acceder a su información o cometer delitos digitales.</p>
+      </div>
+    </div>
+
+    <div class="riesgo">
+      <img src="https://cdn.pixabay.com/photo/2016/10/24/19/59/privacy-policy-1762412_960_720.jpg" alt="Pérdida de privacidad">
+      <h2>3. Pérdida de privacidad</h2>
+      <button onclick="toggle(this)">Ver más</button>
+      <div class="descripcion">
+        <p>Publicar detalles personales como ubicación, rutinas o datos financieros puede poner en peligro tu privacidad y seguridad física o digital.</p>
+      </div>
+    </div>
+
+    <div class="riesgo">
+      <img src="https://cdn.pixabay.com/photo/2016/06/17/06/11/phone-1463863_960_720.jpg" alt="Adicción">
+      <h2>4. Adicción y dependencia</h2>
+      <button onclick="toggle(this)">Ver más</button>
+      <div class="descripcion">
+        <p>El uso constante de redes puede provocar ansiedad, depresión, insomnio o dificultades en las relaciones personales y laborales.</p>
+      </div>
+    </div>
+
+    <div class="riesgo">
+      <img src="https://cdn.pixabay.com/photo/2020/03/20/15/08/fake-news-4942630_960_720.jpg" alt="Desinformación">
+      <h2>5. Desinformación</h2>
+      <button onclick="toggle(this)">Ver más</button>
+      <div class="descripcion">
+        <p>La difusión de noticias falsas puede alterar la percepción pública, influir en decisiones erróneas y generar miedo o confusión.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Conciencia Digital. Educación para un uso responsable de las redes.</p>
+  </footer>
+
+  <script>
+    function toggle(button) {
+      const descripcion = button.nextElementSibling;
+      if (descripcion.style.display === "block") {
+        descripcion.style.display = "none";
+        button.textContent = "Ver más";
+      } else {
+        descripcion.style.display = "block";
+        button.textContent = "Ver menos";
+      }
+    }
+  </script>
+
+</body>
+</html>
